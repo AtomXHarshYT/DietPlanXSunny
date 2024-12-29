@@ -1,7 +1,13 @@
+/* CSS Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+}
+
+body {
+    font-family: 'Roboto', sans-serif; /* Ensure you have a default font */
+    line-height: 1.6; /* Improve readability */
 }
 
 .navbar {
@@ -25,7 +31,7 @@
 
 .title {
     color: white;
-    font-size: 24px;
+    font-size: 1.5rem; /* Use relative units */
 }
 
 nav {
@@ -37,6 +43,7 @@ nav {
     text-decoration: none;
     padding: 10px 15px;
     transition: background-color 0.3s;
+    border-radius: 5px; /* Add border-radius for a modern look */
 }
 
 .nav-btn:hover {
@@ -83,7 +90,7 @@ p {
     }
 
     .title {
-        font-size: 20px;
+        font-size: 1.25rem; /* Use relative units */
     }
 
     h1 {
