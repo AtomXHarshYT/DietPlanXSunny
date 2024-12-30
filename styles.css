@@ -14,7 +14,7 @@ body {
     line-height: 1.6; /* Improve readability */
     margin: 0;
     padding: 0;
-    background: url('./imgs/mainpage_bg.jpg') no-repeat center center fixed;
+    background: url('/imgs/mainpage_bg.jpg') no-repeat center center fixed;
     background-size: cover; /* Ensures the image is responsive */
     position: relative;
     /* background-color: #000000; Optional: Set a background color */
