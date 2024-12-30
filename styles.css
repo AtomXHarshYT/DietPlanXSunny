@@ -12,7 +12,7 @@ html, body {
 body {
     font-family: 'Roboto', sans-serif; /* Ensure you have a default font */
     line-height: 1.6; /* Improve readability */
-    background-color: #f4f4f4; /* Optional: Set a background color */
+    background-color: #ffffff; /* Optional: Set a background color */
 }
 
 .navbar {
