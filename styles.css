@@ -47,23 +47,6 @@ body {
     font-size: 1.5rem; /* Use relative units */
 }
 
-nav {
-    display: flex;
-    margin-left: auto; /* Pushes nav to the right */
-}
-
-.nav-btn {
-    color: darkgreen;/* Darker color for better contrast */
-    text-decoration: none;
-    padding: 10px 15px;
-    transition: background-color 0.3s, color 0.3s; /* Added color transition */
-    border-radius: 5px;
-}
-
-.nav-btn:hover {
-    background-color: var(--hover-color);
-    color: #fff; /* Change text color on hover */
-}
 
 .container {
     max-width: 1200px; /* Adjust as needed */
