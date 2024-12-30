@@ -1,68 +1,86 @@
 /* General Styling */
 body {
-    margin: 0;
-    font-family: 'Poppins', sans-serif; /* Changed font family */
-    background: linear-gradient(135deg, #FFFFFF, #F0F0F0);
-    color: #333;
+  margin: 0;
+  font-family: 'Poppins', sans-serif; /* Changed font family */
+  background: linear-gradient(135deg, #FFFFFF, #F0F0F0);
+  color: #333;
+}
+
+/* Header Styling */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px; /* Reduced padding */
+  background: #282A36; Dark background;
+  color: #FFFFFF;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  height: 50px; /* Increased height of header */
+}
+
+/* Left Content */
+.left-content h1 {
+  font-size: 22px; /* Decreased font size */
+  font-weight: bold;
+  color: #FF6F61; /* Highlighted word color */
+  margin: 0;
+  font-family: 'Oswald', sans-serif;
+}
+
+/* Right Content - Button */
+.contact-button {
+  background-color: #FF6F61; /* Vibrant button color */
+  color: #FFFFFF;
+  border: none;
+  padding: 10px 18px;
+  font-size: 14px; /* Decreased font size */
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.contact-button:hover {
+  transform: scale(1.1); /* Slight zoom animation on hover */
+  background-color: #E05A50; /* Slightly darker color on hover */
+}
+
+.contact-button:active {
+  transform: scale(0.95); /* Press effect */
+}
+
+/* Image Container Styling */
+.image-container {
+  background: url("./imgs/mainpage_bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center; /* Center the logos horizontally */
+  padding: 20px; /* Add some padding around the image container */
+}
+
+.logo-box {
+  flex: 1; /* Allow the boxes to grow equally */
+  margin: 0 10px; /* Add some margin between the boxes */
+}
+
+.logo1 img,
+.logo2 img {
+  max-width: 300px; /* Increased maximum width */
+  max-height: 180px; /* Increased maximum height */
+  width: auto; /* Maintain aspect ratio */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Optional: Add rounded corners */
+}
+
+/* Responsive Design for Images */
+@media (max-width: 768px) {
+  .image-container {
+      flex-direction: column; /* Stack images vertically on small screens */
+      align-items: center; /* Center the logos vertically */
   }
-  
-  /* Header Styling */
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px; /* Reduced padding */
-    background: #282A36; /* Dark background */
-    color: #FFFFFF;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    height: 30px; /* Reduced height of header */
+  .logo-box {
+      margin: 10px 0; /* Add margin for vertical spacing */
+      max-width: 250px; /* Adjusted max-width for logo boxes */
+      max-height: 150px; /* Adjusted max-height for logo boxes */
   }
-  
-  /* Left Content */
-  .left-content h1 {
-    font-size: 22px; /* Decreased font size */
-    font-weight: bold;
-    color: #FF6F61; /* Highlighted word color */
-    margin: 0;
-    font-family: 'Oswald', sans-serif;
-  }
-  
-  /* Right Content - Button */
-  .contact-button {
-    background-color: #FF6F61; /* Vibrant button color */
-    color: #FFFFFF;
-    border: none;
-    padding: 10px 18px;
-    font-size: 14px; /* Decreased font size */
-    border-radius: 8px;
-    cursor: pointer;
-    transition: transform 0.3s ease, background-color 0.3s ease;
-  }
-  
-  .contact-button:hover {
-    transform: scale(1.1); /* Slight zoom animation on hover */
-    background-color: #E05A50; /* Slightly darker color on hover */
-  }
-  
-  .contact-button:active {
-    transform: scale(0.95); /* Press effect */
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    header {
-      flex-direction: row;
-      display: flex;
-      align-items: center;
-      height: 30px;
-    }
-    .left-content h1 {
-      font-size: 18px;
-    }
-    .contact-button {
-      width: 100%; /* Full width button for smaller screens */
-      text-align: right; /* Align button to the right */
-      font-size: 12px;
-      padding: 8px;
-    }
-  }
+}
