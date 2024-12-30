@@ -43,7 +43,7 @@ body {
 }
 
 .title {
-    color: #353030;
+    color: #066623;
     font-size: 1.5rem; /* Use relative units */
 }
 
@@ -53,7 +53,7 @@ nav {
 }
 
 .nav-btn {
-    color: var(--primary-color); /* Darker color for better contrast */
+    color: darkgreen;/* Darker color for better contrast */
     text-decoration: none;
     padding: 10px 15px;
     transition: background-color 0.3s, color 0.3s; /* Added color transition */
