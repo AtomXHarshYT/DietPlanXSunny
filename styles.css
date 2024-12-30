@@ -4,10 +4,12 @@ body {
     font-family: 'Poppins', sans-serif; /* Changed font family */
     background: linear-gradient(135deg, #FFFFFF, #F0F0F0);
     color: #333;
-  }
-  
-  /* Header Styling */
-  header {
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+}
+
+/* Header Styling */
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -16,19 +18,17 @@ body {
     color: #FFFFFF;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     height: 30px; /* Reduced height of header */
-  }
-  
-  /* Left Content */
-  .left-content h1 {
+}
+
+.left-content h1 {
     font-size: 22px; /* Decreased font size */
     font-weight: bold;
     color: #FF6F61; /* Highlighted word color */
     margin: 0;
     font-family: 'Oswald', sans-serif;
-  }
-  
-  /* Right Content - Button */
-  .contact-button {
+}
+
+.right-content .contact-button {
     background-color: #FF6F61; /* Vibrant button color */
     color: #FFFFFF;
     border: none;
@@ -37,33 +37,56 @@ body {
     border-radius: 8px;
     cursor: pointer;
     transition: transform 0.3s ease, background-color 0.3s ease;
-  }
-  
-  .contact-button:hover {
+}
+
+.contact-button:hover {
     transform: scale(1.1); /* Slight zoom animation on hover */
     background-color: #E05A50; /* Slightly darker color on hover */
-  }
-  
-  .contact-button:active {
+}
+
+.contact-button:active {
     transform: scale(0.95); /* Press effect */
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    header {
-      flex-direction: row;
-      display: flex;
-      align-items: center;
-      height: 30px;
+}
+
+/* Logo Section */
+.logo-container {
+    display: flex;
+    justify-content: center;
+    gap: 100px; /* Add space between logos */
+    margin-top: 40px; /* Add some space below logos */
+    flex-wrap: wrap; /* Ensure wrapping on small screens */
+}
+
+.logo-item {
+    flex: 1; /* Make items flexible */
+    display: flex;
+    justify-content: center;
+}
+
+.logo-item1 img {
+    width: 300px; /* Default logo size */
+    height: auto;
+}
+.logo-item2 img {
+    margin-top: 40px;
+    width: 340px; /* Default logo size */
+    height: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .logo-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column; /* Stack logos vertically on smaller screens */
+        gap: 1px; /* Reduce gap between logos */
     }
-    .left-content h1 {
-      font-size: 18px;
+    .logo-item1 img {
+        width: 270px; /* Smaller logo size for mobile screens */
     }
-    .contact-button {
-      width: 100%; /* Full width button for smaller screens */
-      text-align: right; /* Align button to the right */
-      font-size: 12px;
-      padding: 8px;
+  .logo-item2 img {
+        margin-top: -30px;
+        width: 320px; /* Smaller logo size for mobile screens */
     }
-  }
-  
+}
