@@ -5,6 +5,13 @@
     box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
 }
 
+:root {
+    --primary-color: #333;
+    --hover-color: #555;
+    --text-color: #444444;
+    --background-color: rgba(255, 255, 255, 0.4);
+}
+
 html, body {
     height: 100%; /* Ensure the body takes the full height of the viewport */
 }
@@ -12,22 +19,16 @@ html, body {
 body {
     font-family: 'Roboto', sans-serif; /* Ensure you have a default font */
     line-height: 1.6; /* Improve readability */
-    margin: 0;
-    padding: 0;
     background: url('./imgs/mainpage_bg.jpg') no-repeat center center fixed;
     background-size: cover; /* Ensures the image is responsive */
-    position: relative;
-    /* background-color: #000000; Optional: Set a background color */
-    /* background: linear-gradient(135deg, rgba(26, 0, 0, 0.7), rgba(255, 0, 0, 0.7)); */
-
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(255, 255, 255, 0.5);
-    padding: 1px 20px;
+    background-color: var(--background-color);
+    padding: 1px 20px; /* Increased padding for better touch targets */
 }
 
 .logo-container {
@@ -42,17 +43,17 @@ body {
 }
 
 .title {
-    font-family: 'Roboto', sans-serif; /* Font style */
-    color: #444444;
+    color: #353030;
     font-size: 1.5rem; /* Use relative units */
 }
 
 nav {
     display: flex;
+    margin-left: auto; /* Pushes nav to the right */
 }
 
 .nav-btn {
-    color: #333; /* Darker color for better contrast */
+    color: var(--primary-color); /* Darker color for better contrast */
     text-decoration: none;
     padding: 10px 15px;
     transition: background-color 0.3s, color 0.3s; /* Added color transition */
@@ -60,11 +61,13 @@ nav {
 }
 
 .nav-btn:hover {
-    background-color: #555;
+    background-color: var(--hover-color);
     color: #fff; /* Change text color on hover */
 }
 
 .container {
+    max-width: 1200px; /* Adjust as needed */
+    margin: 0 auto; /* Center the container */
     text-align: center;
     padding: 50px 20px;
 }
@@ -105,13 +108,5 @@ p {
 
     .title {
         font-size: 1.25rem; /* Use relative units */
-    }
-
-    h1 {
-        font-size: 1.5em;
-    }
-
-    p {
-        font-size: 0.9em;
     }
 }
