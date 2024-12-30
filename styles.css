@@ -52,15 +52,16 @@ nav {
 }
 
 .nav-btn {
-    color: white;
+    color: #333; /* Darker color for better contrast */
     text-decoration: none;
     padding: 10px 15px;
-    transition: background-color 0.3s;
-    border-radius: 5px; /* Add border-radius for a modern look */
+    transition: background-color 0.3s, color 0.3s; /* Added color transition */
+    border-radius: 5px;
 }
 
 .nav-btn:hover {
     background-color: #555;
+    color: #fff; /* Change text color on hover */
 }
 
 .container {
