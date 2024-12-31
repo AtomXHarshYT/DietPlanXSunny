@@ -12,7 +12,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px; /* Reduced padding */
-  background: #282A36; Dark background;
+  background: #282A36; 
   color: #FFFFFF;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   height: 50px; /* Increased height of header */
@@ -46,41 +46,4 @@ header {
 
 .contact-button:active {
   transform: scale(0.95); /* Press effect */
-}
-
-/* Image Container Styling */
-.image-container {
-  background: url("./imgs/mainpage_bg.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  justify-content: center; /* Center the logos horizontally */
-  padding: 20px; /* Add some padding around the image container */
-}
-
-.logo-box {
-  flex: 1; /* Allow the boxes to grow equally */
-  margin: 0 10px; /* Add some margin between the boxes */
-}
-
-.logo1 img,
-.logo2 img {
-  max-width: 300px; /* Increased maximum width */
-  max-height: 180px; /* Increased maximum height */
-  width: auto; /* Maintain aspect ratio */
-  height: auto; /* Maintain aspect ratio */
-  border-radius: 8px; /* Optional: Add rounded corners */
-}
-
-/* Responsive Design for Images */
-@media (max-width: 768px) {
-  .image-container {
-      flex-direction: column; /* Stack images vertically on small screens */
-      align-items: center; /* Center the logos vertically */
-  }
-  .logo-box {
-      margin: 10px 0; /* Add margin for vertical spacing */
-      max-width: 250px; /* Adjusted max-width for logo boxes */
-      max-height: 150px; /* Adjusted max-height for logo boxes */
-  }
 }
