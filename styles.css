@@ -1,8 +1,14 @@
 /* General Styling */
+html, body {
+  height: 100%; /* Ensures the body takes the full height of the viewport */
+  margin: 0; /* Removes default margin */
+}
+
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif; /* Changed font family */
   background: linear-gradient(135deg, #FFFFFF, #F0F0F0);
+  background-repeat: no-repeat; /* Prevents background from repeating */
   color: #333;
 }
 
