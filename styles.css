@@ -53,3 +53,28 @@ header {
 .contact-button:active {
   transform: scale(0.95); /* Press effect */
 }
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.logo {
+  max-width: 200px;
+  height: auto;
+}
+
+.logo-2{
+  max-width: 250px;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .logo-container {
+    flex-direction: column;
+  }
+}
