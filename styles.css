@@ -13,20 +13,6 @@ body {
   position: relative; /* Position relative to allow absolute positioning of the pseudo-element */
 }
 
-body::before {
-  content: ""; /* Required for pseudo-elements */
-  position: absolute; /* Position it absolutely */
-  top: 0; /* Align to the top */
-  left: 0; /* Align to the left */
-  right: 0; /* Stretch to the right */
-  bottom: 0; /* Stretch to the bottom */
-  background-image: url('./imgs/mainpage_bg.jpg'); /* Your background image */
-  background-size: cover; /* Cover the entire body */
-  background-position: center; /* Center the image */
-  opacity: 0.5; /* Set the desired opacity for the background */
-  z-index: -1; /* Place it behind the content */
-}
-
 /* Header Styling */
 header {
   display: flex;
@@ -90,7 +76,6 @@ header {
 
 @media (max-width: 768px) {
   .logo-container {
-    height: 80%;
     flex-direction: column;
   }
 }
