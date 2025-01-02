@@ -59,7 +59,7 @@ header {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 10px;
   padding: 20px;
 }
 
@@ -75,6 +75,7 @@ header {
 
 @media (max-width: 768px) {
   .logo-container {
+    height: 80%;
     flex-direction: column;
   }
 }
