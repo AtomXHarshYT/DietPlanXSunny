@@ -56,12 +56,15 @@ header {
 }
 
 .logo-container {
+  background-image: url(./imgs/mainpage_bg50.jpg);
+  background-position: center;
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 10px;
-  padding: 20px;
+  gap: 70px;
+  padding: 30px;
 }
 
 .logo {
@@ -76,6 +79,20 @@ header {
 
 @media (max-width: 768px) {
   .logo-container {
+    gap: 2px;
+    padding: 5px;
+    display: flex;
+    height: 60%;
     flex-direction: column;
+  }
+
+  .logo {
+    max-width: 150px;
+    height: auto;
+  }
+  
+  .logo-2 {
+    max-width: 200px;
+    height: auto;
   }
 }
